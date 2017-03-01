@@ -10,7 +10,7 @@ let task = URLSession.shared.dataTask(with: readmeURL) { (data, response, error)
     guard let data = data else { return }
     guard let content = String(data: data, encoding: .utf8) else { return }
 
-    let pat = "\\|\\s+([a-z]+) +.+\\[([^\\]]+)\\] +\\| +.+\\[([^\\]]+)\\] \\|"
+    let pat = "\\|\\s+([a-z ]+) +.+\\[([^\\]]+)\\] +\\| +.+\\[([^\\]]+)\\] \\|"
     let regex = try! NSRegularExpression(pattern: pat, options: [.caseInsensitive])
     let matches = regex.matches(
         in: content,

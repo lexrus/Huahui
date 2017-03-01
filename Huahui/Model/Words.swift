@@ -41,7 +41,7 @@ extension Word {
         Word("query", US: "'kwaɪri", UK: "'kwɪəri"),
         Word("resolved", US: "rɪ'səʊvd", UK: "rɪ'zɒlvd"),
         Word("retina", US: "ri'tina", UK: "'retɪnə"),
-        Word("san", US: "sæn'ju:s", UK: "sænhəu'zei"),
+        Word("san jose", US: "sæn'ju:s", UK: "sænhəu'zei"),
         Word("safari", US: "sæfərɪ", UK: "sə'fɑːrɪ"),
         Word("scheme", US: "s'kæmə", UK: "skiːm"),
         Word("suite", US: "sjuːt", UK: "swiːt"),
