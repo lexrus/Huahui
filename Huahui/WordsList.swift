@@ -43,7 +43,7 @@ final class WordsList : UIViewController {
         tableView.dataSource = self
     }
 
-    fileprivate func readCell(ofIndexPath indexPath: IndexPath) {
+    fileprivate func readCell(of indexPath: IndexPath) {
         let word = words[indexPath.row]
         if speechSynthesizer.isSpeaking {
             speechSynthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
@@ -103,7 +103,7 @@ extension WordsList : UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        readCell(ofIndexPath: indexPath)
+        readCell(of: indexPath)
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

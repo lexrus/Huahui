@@ -21,10 +21,9 @@ let task = URLSession.shared.dataTask(with: readmeURL) { (data, response, error)
     let s = content as NSString
     matches.forEach { result in
         let word = s.substring(with: result.rangeAt(1))
-        let uk = s.substring(with: result.rangeAt(2))
-        let us = s.substring(with: result.rangeAt(3))
+        let us = s.substring(with: result.rangeAt(2))
 
-        print("Word(\"\(word)\", US: \"\(us)\", UK: \"\(uk)\"),")
+        print("Word(\"\(word)\", US: \"\(us)\", UK: \"\"),")
     }
     PlaygroundPage.current.finishExecution()
 }
